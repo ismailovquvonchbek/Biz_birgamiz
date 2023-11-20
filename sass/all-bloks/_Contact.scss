@@ -1,0 +1,219 @@
+.kamusari {
+    margin-top: 110px;
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__info {
+        text-align: start;
+    }
+
+    &__heading {
+        color: #333;
+        font-family: "Futura PT";
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px;
+        margin-bottom: 27px;
+    }
+
+    &__text {
+        max-width: 447px;
+        width: 100%;
+        color: #949494;
+        font-family: "Futura PT";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: start;
+        margin-bottom: 117px;
+    }
+
+    &__text--2 {
+        max-width: 153px;
+        width: 100%;
+        color: #333;
+        font-family: "Futura PT";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: var(--sabzi);
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: start;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 931px) {
+    .kamusari .container {
+        flex-direction: column;
+    }
+
+    .kamusari__info {
+        order: 1;
+        text-align: center;
+    }
+
+    .kamusari__list {
+        text-align: center;
+    }
+
+    .kamusari__pic {
+        order: -1;
+    }
+
+    .kamusari__text {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .kamusari__heading {
+        font-size: 64px;
+    }
+
+    .kamusari__text {
+        font-size: 14px;
+    }
+
+    .kamusari__text--2 {
+        font-size: 10px;
+    }
+}
+
+// Datebayo
+
+.datebayo {
+    margin-top: 100px;
+    .container {
+        text-align: center;
+    }
+
+    &__img {
+        margin-bottom: 24px;
+    }
+
+    &__heading {
+        margin-bottom: 350px;
+    }
+
+    &__bg {
+        background: url(../img/datebayo_bg.png) no-repeat; 
+        background-size: contain; 
+        max-width: 443px;
+        width: 100%;
+        padding-top: 390px;
+        margin-top: -290px;
+        position: absolute;
+        text-align: center;
+    }
+
+    &__info {
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    &__maps {
+        max-width: 769px;
+        width: 100%;
+        height: 466px;
+    }
+
+    &__pic {
+        max-width: 769px;
+        width: 100%;
+        height: 466px;
+    }
+}
+
+@media (max-width: 931px) {
+    .datebayo__info {
+        flex-direction: column;
+    }
+
+    .datebayo__maps {
+        max-width: 610px;
+        width: 100%;
+    }
+
+    .datebayo__pic {
+        max-width: 610px;
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 432px) {
+    .datebayo__bg {
+        margin-top: -280px;
+    }
+}
+
+@media (max-width: 415px) {
+    .datebayo__bg {
+        margin-top: -270px;
+    }
+}
+
+@media (max-width: 399px) {
+    .datebayo__bg {
+        margin-top: -260px;
+    }
+}
+
+@media (max-width: 387px) {
+    .datebayo__bg {
+        margin-top: -260px;
+    }
+}
+
+@media (max-width: 370px) {
+    .datebayo__bg {
+        margin-top: -250px;
+    }
+}
+
+@media (max-width: 365px) {
+    .datebayo__bg {
+        margin-top: -240px;
+    }
+}
+
+@media (max-width: 350px) {
+    .datebayo__bg {
+        margin-top: -230px;
+    }
+}
+
+@media (max-width: 335px) {
+    .datebayo__bg {
+        margin-top: -220px;
+    }
+}
+
+@media (max-width: 320px) {
+    .datebayo__bg {
+        margin-top: -210px;
+    }
+}
+
+
+
+
+
+
