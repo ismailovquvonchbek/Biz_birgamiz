@@ -1,0 +1,288 @@
+// Ace //
+
+.ace {
+    margin-top: 40px;
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 121px;
+    }
+
+    &__header {
+        color: #333;
+        font-family: "Futura PT";
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 64px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        max-width: 447px;
+        width: 100%;
+        color: #949494;
+        font-family: "Futura PT";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 931px) {
+    .ace .container {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .ace__header {
+        order: 1;
+    }
+
+    .ace__img {
+        order: -1;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .ace__header {
+        font-size: 66px;
+    }
+
+    .ace__text {
+        font-size: 14px;
+    }
+}
+
+// Sabo //
+
+.sabo {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        border: 1px solid #F3F3F3;
+        background: #FFF;
+        margin-bottom: 121px;
+    }
+
+    &__item_1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+
+    &__d {
+        display: flex;
+        gap: 5px;
+    }
+
+    &__link {
+        color: #3D9CEA;
+        text-align: center;
+        font-family: "Futura PT";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    &__sifr {
+        color: #949494;
+        font-family: "Futura PT";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__header {
+        max-width: 325px;
+        width: 100%;
+        color: #333;
+        font-family: "Futura PT";
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        max-width: 517px;
+        width: 100%;
+        color: #949494;
+        font-family: "Futura PT";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 51px;
+    }
+
+    &__btn {
+        border: none;
+        display: flex;
+        background: none;
+        gap: 5px;
+    }
+
+    &__text_1 {
+        color: #333;
+        font-family: "Futura PT";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: var(--sabzi);
+        }
+    }
+}
+
+@media (max-width: 931px) {
+    .sabo .container {
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .sabo__header {
+        font-size: 26px;
+    }
+
+    .sabo__text {
+        font-size: 14px;
+    }
+}
+
+// Luffy //
+
+.luffy {
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    &__item {
+        max-width: 305px;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #E4E4E2;
+        text-align: start;
+        padding: 10px 10px;
+        margin-top: 70px;
+    }
+
+    &__img {
+        margin-bottom: 21px;
+    }
+
+    &__sifr {
+        text-align: end;
+        margin-bottom: 2px;
+    }
+
+    &__heading {
+        max-width: 182px;
+        width: 100%;
+        color: #000;
+        font-family: "Futura PT";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        max-width: 244px;
+        width: 100%;
+        color: #949494;
+        font-family: "Futura PT";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin-bottom: 37px;
+    }
+
+    &__btn {
+        border: none;
+        display: flex;
+        border-radius: 3px;
+        background: #333;
+        padding: 20px 20px;
+        gap: 5px;
+        color: #FFF;
+        font-family: "Futura PT";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+
+}
+
+.luffy__btn:hover {
+    border-radius: 3px;
+    background: #FFBD54;
+    color: #333;
+    font-family: "Futura PT";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 20px 20px;
+}
+
+.flex {
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width: 931px) {
+    .luffy__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 650px) {
+    .luffy__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .luffy__heading {
+        font-size: 18px;
+    }
+
+    .luffy__text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 380px) {
+    .luffy__list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
